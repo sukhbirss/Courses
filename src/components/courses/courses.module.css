@@ -1,0 +1,15 @@
+.wrapper{
+	width: calc(100vw - 300px);
+	height: 100vh;
+	margin-left: 300px;
+}
+.container{
+	width: 80%;
+	padding-top: 10vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	column-gap: 40px;
+	row-gap: 40px;
+}

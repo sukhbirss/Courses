@@ -1,0 +1,62 @@
+.mobile-container {
+  width: 100vw;
+}
+.header {
+  width: 88%;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 6%;
+  animation: createBox 1s;
+
+}
+.menu {
+  width: 40px;
+  height: 40px;
+}
+.mobile-container > h1 {
+  width: 300px;
+  margin: 20px 0px 50px 30px;
+}
+.mobile-container > p {
+  width: 320px;
+  margin: 50px 0px 50px 30px;
+  line-height: 25px;
+  font-size: 17px;
+  color: #706464;
+  position: relative;
+}
+
+.cardLayout {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.mobile-container > p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  height: 1px;
+  width: 30%;
+  border-bottom: 2px solid red;
+}
+@media screen and (min-width: 500px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+
+@keyframes createBox {
+  from {
+      transform: translateY(-50%);
+  }
+  to {
+      transform: translateY(0%);
+  }
+}
