@@ -1,7 +1,16 @@
 .wrapper{
-	width: calc(100vw - 300px);
+	width: 80vw;
 	height: 100vh;
-	margin-left: 300px;
+	margin-left: 20vw;
+	background-image: url(./wave.svg);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+.wrapper > h1{
+	margin: 0;
+	width: 800px;
+	font-size: 60px;
+	color: white;
 }
 .container{
 	width: 80%;
