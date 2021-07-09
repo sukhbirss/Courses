@@ -20,7 +20,11 @@ export  const DATA = [[
 				{id:"14",image:"https://img-c.udemycdn.com/course/240x135/2668194_f343_3.jpg",title:"The Complete Python Programmer Bootcamp 2021",author:"",rating:"",price:""},
 				{id:"15",image:"https://img-c.udemycdn.com/course/240x135/2563788_0ef3_14.jpg",title:"Advanced Python by Example",author:"Udemy",rating:"",price:""}
 			],
-
+			[	
+				{id:"16",image:"https://img-c.udemycdn.com/course/240x135/2309096_deb4_2.jpg",title:"Ethical Hacking - Kali Linux for beginners with an e-book",author:"Udemy",rating:"4.5",price:"499"},
+				{id:"17",image:"https://img-c.udemycdn.com/course/240x135/828062_3d04_2.jpg",title:"Kali Linux Hacking Lab for Beginners",author:"",rating:"",price:""},
+				{id:"18",image:"https://img-c.udemycdn.com/course/240x135/2563788_0ef3_14.jpg",title:"Advanced Python by Example",author:"Udemy",rating:"",price:""}
+			],
 		]
 
 export  const DATA2 = [
@@ -39,5 +43,8 @@ export  const DATA2 = [
 				{id:"12",image:"https://img-c.udemycdn.com/course/240x135/1638522_fbdf.jpg",title:"Node.js: The Complete Guide to Build RESTful APIs (2018)",author:"Udemy",rating:"3",price:"889Rs"},
 				{id:"13",image:"https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg",title:"2021 Complete Python Bootcamp From Zero to Hero in Python",author:"Udemy",rating:"4.5",price:"499Rs"},
 				{id:"14",image:"https://img-c.udemycdn.com/course/240x135/2668194_f343_3.jpg",title:"The Complete Python Programmer Bootcamp 2021",author:"",rating:"3",price:"368Rs"},
-				{id:"15",image:"https://img-c.udemycdn.com/course/240x135/2563788_0ef3_14.jpg",title:"Advanced Python by Example",author:"Udemy",rating:"5",price:"896Rs"}
+				{id:"15",image:"https://img-c.udemycdn.com/course/240x135/2563788_0ef3_14.jpg",title:"Advanced Python by Example",author:"Udemy",rating:"5",price:"896Rs"},
+				{id:"16",image:"https://img-c.udemycdn.com/course/240x135/2309096_deb4_2.jpg",title:"Ethical Hacking - Kali Linux for beginners with an e-book",author:"Udemy",rating:"4.5",price:"499"},
+				{id:"17",image:"https://img-c.udemycdn.com/course/240x135/828062_3d04_2.jpg",title:"Kali Linux Hacking Lab for Beginners",author:"",rating:"",price:""},
+				{id:"18",image:"https://img-c.udemycdn.com/course/240x135/2563788_0ef3_14.jpg",title:"Advanced Python by Example",author:"Udemy",rating:"",price:""}
 		]

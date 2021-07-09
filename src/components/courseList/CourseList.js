@@ -1,10 +1,13 @@
 import styles from "./courseList.module.css";
 import { useState } from "react";
 import { useHistory } from 'react-router-dom';
-const css = { textDecorationLine: "line-through", textDecorationColor: "red" };
+import { useParams } from 'react-router-dom'
+
+const css = { color:"green" };
 
 export default function CourseList() {
-  const [state, setState] = useState("0");
+  const {id} = useParams();
+  const [state, setState] = useState(id);
   const history = useHistory();
 
   return (
@@ -33,21 +36,21 @@ export default function CourseList() {
           Python
         </p>
         <p
-          onClick={() =>  {history.push('/2'); setState("3")} }
+          onClick={() =>  {history.push('/3'); setState("3")} }
           style={state === "3" ? css : null}
         >
-          Setting
+          Hacking
         </p>
         <p
           onClick={() =>  {history.push('/2'); setState("4")} }
           style={state === "4" ? css : null}
         >
-          Night Mode
+          Django
         </p>
-        <p onClick={() => setState("Book")} style={state === "Book" ? css : null}>
-          Book
+        <p onClick={() =>  {history.push('/1'); setState("5")} } style={state === "5" ? css : null}>
+          Mixed
         </p>
-        <button>cart</button>
+        <button><a href="https://github.com/sukhbirss/Courses"  target="_blank">Github</a></button>
       </div>
     </div>
   );

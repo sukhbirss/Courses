@@ -1,5 +1,6 @@
 .wrapper{
 	width: 100vw;
+
 }
 .container{
 	max-width: 1100px;
@@ -87,4 +88,55 @@
 .data{
 	margin-top: 20px;
 	width: 700px;
+}
+
+@media screen and (max-width: 600px) {
+	.header_content{
+		width: 1100px;
+		height: 400px;
+		margin: 0 auto;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.container{
+		max-width: 96vw;
+		margin: 20px auto;
+	}
+	.header_content{
+		width: 96vw;
+		height: 400px;
+		margin: 0 auto;
+		color: white;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.info{
+		width: 90vw;
+		height: 300px;
+		border:solid 1px #e2e2e2;
+		padding: 20px 20px;
+		display: grid;
+	  	grid-template-columns: auto ;
+
+	}
+	.data{
+		margin-top: 20px;
+		width: 96vw;
+	}
+	.info > p{
+		width: 96vw;
+	}
+	.content_left > h1{
+		width: 96vw;
+	}
+	.content_left {
+		width: 96vw;
+	}
+	.content_right {
+		display: none;
+	}
+
 }

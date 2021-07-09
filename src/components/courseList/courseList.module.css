@@ -11,7 +11,7 @@
   position: fixed;
   animation: navigation 0.75s;
   text-align: center;
-  
+
 }
 .sidebar > h1 {
   font-size: 40px;
@@ -36,8 +36,9 @@
   .sidebarContainer{
   }
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 600px) {
   .sidebarContainer{
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -51,4 +52,8 @@
   to {
     transform: translateX(0%);
   }
+}
+button > a{
+  text-decoration: none;
+  color:white;
 }
