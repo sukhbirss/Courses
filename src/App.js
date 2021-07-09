@@ -6,7 +6,7 @@ import Detail from './page/detail/Detail'
 const Routing = ()=>{
   return(
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route exact path="/:id" component={Home}/>
           <Route exact path="/detail/:id" component={Detail}/>
       	</Switch>
   )

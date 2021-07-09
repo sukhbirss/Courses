@@ -1,26 +1,20 @@
 import styles from "./courses.module.css";
 import Card from '../card/Card'
+import { useParams } from 'react-router-dom'
+import {DATA} from "../../data/data"
 
-const DATA = [	
-				{image:"https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",title:"React - The Complete Guide (incl Hooks, React Router, Redux)",author:"sukhbir",rating:"4.5",price:"499"},
-				{image:"https://img-c.udemycdn.com/course/240x135/2121018_9de5_5.jpg",title:"Redux",author:"",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/2121018_9de5_5.jpg",title:"React - The Complete Guide (incl Hooks, React Router, Redux",author:"sukhbir",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/705264_caa9_11.jpg",title:"Redux",author:"sukhbir",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/959700_8bd2_11.jpg",title:"Redux",author:"sukhbir",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",title:"React - The Complete Guide (incl Hooks, React Router, Redux",author:"sukhbir",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",title:"Redux",author:"sukhbir",rating:"",price:""},
-				{image:"https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",title:"React - The Complete Guide (incl Hooks, React Router, Redux",author:"sukhbir",rating:"",price:""}
-			]
 export default function Home() {
+	const {id} = useParams();
+
   return (
     <div className={styles.wrapper}>
     	<h1>lets find a course for you</h1>
 
     	<div className={styles.container}>
     	{
-    		DATA.map((el)=>{
+    		DATA[id].map((el)=>{
     			return (
-    				<Card image={el.image} title={el.title} author={el.author} rating={el.rating} price={el.price}/>
+    				<Card image={el.image} id={el.id} title={el.title} author={el.author} rating={el.rating} price={el.price}/>
     				)
     		})
     	}
