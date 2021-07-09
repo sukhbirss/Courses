@@ -5,7 +5,9 @@ export default function Welcome() {
 
   return (
     <div >
-		<h1 onClick={()=>history.push('./0')}>Welcome</h1>
+		<h1 onClick={history.push('./0')}>
+			Welcome
+		</h1>
 
     </div>
   );
