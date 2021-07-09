@@ -8,10 +8,10 @@ export default function Card({id,image,title,author,rating,price}){
     <div className={styles.card} onClick={() => history.push(`detail/${id}`)}>
       <img src={image} />
       <p>{title}</p>
-      <p>{author}</p>
-      <p>{rating}</p>
+      <p>Author: {author}</p>
+      <p>Rating: {rating}</p>
       <p>{price}</p>
-      <p>Bestseller</p>
+      <button className={styles.btn2}>View Course</button>
     </div>
   )
 }

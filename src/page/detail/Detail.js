@@ -2,7 +2,7 @@ import styles from "./detail.module.css";
 import Collapsible from 'react-collapsible';
 import { useState,useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-
+import Section from '../../components/sections/Sections'
 import {DATA2} from "../../data/data"
 
 function getKeyByValue(object, value) {
@@ -38,7 +38,7 @@ export default function Detail(){
                   <img src={state.image}/>
                 </div>
                 <div className={styles.box_content}>
-                    <h1>₹8,640</h1>
+                    <h1>{state.price}</h1>
                     <button>Add to cart</button>
                     <button>Buy Now</button>
 
@@ -65,87 +65,16 @@ export default function Detail(){
         </div>
 
         <div className={styles.data}>
-          <Collapsible trigger="Getting Started">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
-          <Collapsible trigger="Section">
-            <p>
-              content of this course's section goes here
-            </p>
-            <p>
-              some more details goes here
-            </p>
-          </Collapsible>
-
+          <Section title="Getting started"/>
+          <Section title="Section"/>
+          <Section title="Another Section"/>
+          <Section title="One more"/>
+          <Section title="and go on"/>
+          <Section title="section"/>
+          <Section title="section"/>
+          <Section title="section"/>
+          <Section title="section"/>
+          <Section title="section"/>
         </div>
       </div>
 

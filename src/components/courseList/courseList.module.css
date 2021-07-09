@@ -10,6 +10,8 @@
 .sidebar {
   position: fixed;
   animation: navigation 0.75s;
+  text-align: center;
+  
 }
 .sidebar > h1 {
   font-size: 40px;

@@ -88,13 +88,3 @@
 	margin-top: 20px;
 	width: 700px;
 }
-.data > div >div{
-	background-color: white;
-
-}
-.data > div{
-	border:solid 1px grey;
-	background-color: #f5f5f5;
-	min-height: 50px;
-
-}
