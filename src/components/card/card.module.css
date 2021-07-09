@@ -7,7 +7,8 @@
   align-items: center;
   white-space: wrap;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+              rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+              rgba(17, 17, 26, 0.1) 0px 16px 48px;
   align-items: flex-start;
   cursor: pointer;
   overflow: hidden;
@@ -24,10 +25,40 @@
   animation-delay: 0.3s;
 }
 .card > p{
-  margin: 2%;
-}
-.card > p{
   font-size: 1vw;
+  margin: 2%;
+
+}
+.card > p:nth-child(3) {
+  color: #73726c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  margin: 0px 10px;
+
+}
+.card > p:nth-child(4) {
+  color: #73726c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0px 10px;
+  
+}
+.card > p:nth-child(5) {
+  color: #73726c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1rem;
 }
 @keyframes card {
   from {

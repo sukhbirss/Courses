@@ -1,11 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './page/Home'
+import { Route,Switch,useHistory } from 'react-router-dom'
+import Detail from './page/detail/Detail'
+
+const Routing = ()=>{
+  return(
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/detail/:id" component={Detail}/>
+      	</Switch>
+  )
+}
+
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+        <Routing />
   );
 }
 

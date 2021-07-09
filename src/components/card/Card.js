@@ -7,6 +7,8 @@ export default function Card({image,title,author,rating,price}){
       <p>{author}</p>
       <p>{rating}</p>
       <p>{price}</p>
+      <p>Bestseller</p>
+
     </div>
   )
 }
