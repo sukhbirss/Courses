@@ -114,7 +114,7 @@
 	}
 
 	.info{
-		width: 90vw;
+		width: 86vw;
 		height: 300px;
 		border:solid 1px #e2e2e2;
 		padding: 20px 20px;
@@ -127,7 +127,7 @@
 		width: 96vw;
 	}
 	.info > p{
-		width: 96vw;
+		width: 90vw;
 	}
 	.content_left > h1{
 		width: 96vw;
@@ -138,5 +138,15 @@
 	.content_right {
 		display: none;
 	}
+	.btn{
+	outline: none;
+	border:none;
+	color:white;
+	background-color: #1e1e1c;
+	padding: 10px 20px;
+	margin-right: 10px;
+	border:solid 1px white;
+}
+
 
 }
