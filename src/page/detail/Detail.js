@@ -24,7 +24,7 @@ export default function Detail(){
             <div className={styles.header_content}>
               <div className={styles.content_left}>
                 <h1>{state.title}</h1>
-                <p>Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!</p>
+                <p>{state.description}</p>
                 <p>Created by , </p>
                 <p>Last updated 6/2021 English English, French [Auto]</p> 
                 <div>
