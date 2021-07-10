@@ -8,7 +8,6 @@ export default function Home() {
 
   return (
     <div className={styles.wrapper}>
-    	<h1>lets find a course for you</h1>
 
     	<div className={styles.container}>
     	{

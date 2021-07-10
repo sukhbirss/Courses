@@ -13,7 +13,7 @@ export default function CourseList() {
   return (
     <div className={styles.sidebarContainer}>
       <div className={styles.sidebar} >
-        <h1>Lorem Ipsum</h1>
+        <h1>Course list</h1>
         <p
           onClick={() =>  {history.push('/0'); setState("0")} }
 
